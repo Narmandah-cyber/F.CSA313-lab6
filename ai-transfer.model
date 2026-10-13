@@ -1,0 +1,23 @@
+FromExists: Yes, No
+FromFrozen: Active, Frozen
+ToExists: Yes, No
+SameAccount: Different, Same
+AmountSign: Positive, Zero, Negative
+BalanceCheck: Within, Equal, Exceeds
+DailyLimitCheck: Within, Equal, Exceeds
+CurrencyMatch: Same, Different
+
+IF [FromExists] = "No"
+THEN [FromFrozen] = "Active";
+
+IF [FromExists] = "No"
+THEN [SameAccount] = "Different";
+
+IF [ToExists] = "No"
+THEN [SameAccount] = "Different";
+
+IF [AmountSign] <> "Positive"
+THEN [BalanceCheck] = "Within";
+
+IF [AmountSign] <> "Positive"
+THEN [DailyLimitCheck] = "Within";

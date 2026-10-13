@@ -1,0 +1,17 @@
+FromExists	FromFrozen	ToExists	SameAccount	AmountSign	BalanceCheck	DailyLimitCheck	CurrencyMatch
+Yes	Active	Yes	Different	Positive	Equal	Exceeds	Same
+Yes	Frozen	Yes	Same	Positive	Exceeds	Within	Different
+No	Active	No	Different	Positive	Within	Equal	Different
+Yes	Active	Yes	Same	Positive	Exceeds	Exceeds	Same
+Yes	Frozen	Yes	Same	Positive	Equal	Equal	Same
+Yes	Frozen	No	Different	Zero	Within	Within	Same
+Yes	Active	Yes	Same	Zero	Within	Within	Different
+No	Active	No	Different	Positive	Exceeds	Equal	Same
+Yes	Frozen	Yes	Different	Negative	Within	Within	Different
+No	Active	Yes	Different	Zero	Within	Within	Different
+Yes	Frozen	Yes	Same	Positive	Within	Exceeds	Different
+Yes	Active	Yes	Same	Positive	Equal	Within	Different
+Yes	Active	Yes	Same	Negative	Within	Within	Same
+Yes	Frozen	No	Different	Positive	Equal	Exceeds	Same
+No	Active	Yes	Different	Positive	Equal	Exceeds	Same
+No	Active	No	Different	Negative	Within	Within	Same
